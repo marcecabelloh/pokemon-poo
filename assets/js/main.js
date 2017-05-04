@@ -32,12 +32,12 @@ console.log(Charmander.vida)
 function botonAtacar(){
 	var pokemon1 = document.getElementById("elegir").value;
 	var pokemon2 = document.getElementById("escoger").value;
-
+	
 	if(pokemon1 == pokemon2){
 		alert("No se peleen!!! (No pueden pelear dos Pókemon iguales)");
-
+		return;
 	}
-
+	
 	var ataqueUno = prompt("Ingresa poder de ataque del primer Pokemon");
 	var ataqueDos = prompt("Ingresa poder de ataque del segundo Pokemon");
 
@@ -46,7 +46,7 @@ function botonAtacar(){
 
 	var ataque = pikachu.atacar(pokemon2);
 	var tagResultado = document.getElementById("resultado");
-	var textoResultado = pokemon1 + " ataco a " + pokemon2 + " y " +  pokemon2 + " tiene una vida de : " + charmander.vida;	
+	var textoResultado = pokemon1 + " ataco a " + pokemon2 + " y " +  pokemon2 + " tiene una vida de : " + (charmander.vida - ataqueUno);	
 
 	tagResultado.innerHTML = textoResultado;
 
