@@ -25,4 +25,8 @@ const Charmander = new Pokemon("Charmander", "rojo", 20)
 
 Pikachu.atacar(Charmander)
 
+function renderTask(task){
+	var optionAux = document.createElement("option");
+	var textAux = document.createTextNode(task.title + "  ");
+
 console.log(Charmander.vida)
