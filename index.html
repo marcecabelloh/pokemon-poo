@@ -8,16 +8,17 @@
 <body>
 
 	<div>
-		<select>
-			<option value="Pikachu" id="pikachu1" class="pikachu">Pikachu</option>
-			<option value="Charmander" id="charmander1" class="charmander">Charmander</option>
+		<select id="elegir">
+			<option value="Pikachu" class="pikachu">Pikachu</option>
+			<option value="Charmander" class="charmander">Charmander</option>
 		</select>
-		<select>
-			<option value="Pikachu" id="pikachu2" class="pikachu">Pikachu</option>
-			<option value="Charmander" id="charmander2" class="charmander">Charmander</option>
+		<select id="escoger">
+			<option value="Pikachu">Pikachu</option>
+			<option value="Charmander">Charmander</option>
 			</select>
-		<button type="button">Pelear</button>
+		<button onclick="botonAtacar()">Pelear</button>
 	</div>
+	<div id="resultado"></div>
 
 	<img src="pokemon_3.jpg">
 	<script src="assets/js/main.js"></script>
